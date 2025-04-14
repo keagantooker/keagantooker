@@ -1,0 +1,183 @@
+/* Optional: Import a nicer monospace font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  color: #569cd6; /* Blue - like function names */
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #c586c0; /* Light purple - class/type names */
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: #4ec9b0; /* Teal - variables or methods */
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+  color: #ffffff;
+  cursor: default;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li::before {
+  content: "- ";
+  color: #dcdcaa; /* Yellow - constants/strings */
+}
+
+/* Links */
+a {
+  color: #9cdcfe; /* Cyan - imports, references */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Terminal-style prompt */
+.prompt {
+  color: #ce9178; /* Orange-red - string literals */
+  font-weight: bold;
+}
+
+/* Preformatted blocks */
+pre {
+  background-color: #252526;
+  border-left: 4px solid #007acc;
+  color: #d4d4d4;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+/* Form elements */
+form {
+  margin-top: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: #d4d4d4;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005f9e;
+}
+
+/* Optional: syntax-style text spans for inline flair */
+.syntax-string {
+  color: #ce9178;
+}
+
+.syntax-keyword {
+  color: #569cd6;
+}
+
+.syntax-type {
+  color: #c586c0;
+}
+
+.syntax-number {
+  color: #b5cea8;
+}
+
+.syntax-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+#ip-info-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #252526;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #333;
+  font-size: 0.85rem;
+  color: #6a9955; /* same as .syntax-comment */
+  font-family: 'Fira Code', monospace;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+main {
+  margin-top: 3.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  padding-bottom: 2rem;
+  max-width: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+}
