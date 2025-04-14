@@ -1,10 +1,10 @@
 <script>
  async function fetchIPInfo() {
   try {
-    const res = await fetch("https://ipinfo.io/json?token=demo");
-    if (!res.ok) throw new Error("Network response was not ok");
+    const response = await fetch("https://ipinfo.io/json?token=demo");
+    if (!response.ok) throw new Error("Network response was not ok");
 
-    const data = await res.json();
+    const data = await response.json();
 
     const ip = data.ip;
     const city = data.city;
