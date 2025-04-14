@@ -181,3 +181,7 @@ main {
 footer {
   text-align: center;
 }
+
+header {
+  margin-top: 3.5rem;
+}
