@@ -1,7 +1,7 @@
 <script>
   window.onload = async function () {
     try {
-      const response = await fetch("https://ipinfo.io/json?token=demo");
+      const response = await fetch("https://ipinfo.io/json/");
       if (!response.ok) throw new Error("Network response was not ok");
 
       const data = await response.json();
