@@ -1,7 +1,7 @@
 <script>
   async function fetchIPInfo() {
   try {
-  const res = await fetch('https://ipapi.co/json/');
+  const res = await fetch("https://ipinfo.io/json?token=demo");
   const data = await res.json();
 
   const ip = data.ip;
